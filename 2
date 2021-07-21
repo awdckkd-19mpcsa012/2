@@ -1,0 +1,28 @@
+import java.util.*;
+class remove
+
+{
+public static void main(String args[])
+{
+ArrayList <Integer> a=new ArrayList <Integer>();
+Scanner s = new Scanner(System.in);
+int n,num;
+System.out.println("Enter size of ArrayList");
+n=s.nextInt();
+System.out.println("Enter elements");
+for(int i=0;i<n;i++)
+a.add(s.nextInt());
+System.out.println("Enter the number you wanted to delete");
+num=s.nextInt();
+if(a.contains(num))
+{
+int del = a.indexOf(num);
+for(int i=0;i<n;i++)
+if(a.get(i)<del)
+a.remove(i);
+for(int j:a)
+
+System.out.println(a);
+}}
+
+}
